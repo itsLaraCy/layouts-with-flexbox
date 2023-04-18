@@ -1,0 +1,91 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*Erase me later*/
+
+header,section,footer{
+    border:2px solid black;
+
+}
+
+/*Layout*/
+
+header{
+    height:500px;
+    
+}
+
+section{
+    height:200px;
+    width:50%;
+    float:right;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+
+footer{
+    height:30vh;
+    clear:both;
+    background-color: blueviolet;
+}
+
+/*Content*/
+
+body{
+    background-color: beige;
+}
+img{
+    height:30%;
+    border-radius: 50%;
+
+}
+
+header{
+    background-image: url(clouds.png);
+    background-size: 47%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1{
+    justify-self:flex-start;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:white;
+    background-color: green;
+    padding: 15px;
+}
+/*Flexbox*/
+
+header{
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction:column;
+    align-items:center;
+}
+section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+footer {
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+}
+
+/*media query*/
+@media screen and (max-width: 576px) {
+    header,section,footer {
+        height:33.333vh;
+    }
+}
